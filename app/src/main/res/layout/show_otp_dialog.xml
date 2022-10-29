@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/white_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:padding="@dimen/fivedp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fiftendp" android:text="OTP Sent"/>
+    <EditText android:textColor="#000" android:id="@+id/inputBoxET" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="@dimen/fiftendp" android:layout_marginRight="25dp" android:hint="Enter OTP" android:maxLength="7" android:inputType="number"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fiftendp" android:layout_marginTop="25dp" android:layout_marginRight="@dimen/fiftendp">
+        <Button android:id="@+id/resendOTP" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fiftendp" android:layout_marginRight="@dimen/fiftendp" android:text="Resend" android:layout_weight="1"/>
+        <Button android:id="@+id/submitBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fiftendp" android:layout_marginRight="@dimen/fiftendp" android:text="Submit" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+package com.sandy.cosmossoft.activities.addfunds;
+
+import android.view.View;
+
+/* compiled from: D8$$SyntheticClass */
+public final /* synthetic */ class PayActivity$$ExternalSyntheticLambda3 implements View.OnClickListener {
+    public final /* synthetic */ PayActivity f$0;
+
+    public /* synthetic */ PayActivity$$ExternalSyntheticLambda3(PayActivity payActivity) {
+        this.f$0 = payActivity;
+    }
+
+    public final void onClick(View view) {
+        this.f$0.mo954x16e4bbd4(view);
+    }
+}

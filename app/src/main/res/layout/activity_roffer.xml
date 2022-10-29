@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_roffer_0" android:background="@color/screenBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/panSearchCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="25dp" app:cardElevation="0.5dp" app:contentPadding="2sp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <SearchView android:textSize="14sp" android:textStyle="bold" android:id="@+id/planSearchView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:iconifiedByDefault="false" android:queryHint="@string/search" android:fontFamily="@font/sagnika"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/panSearchCard">
+        <LinearLayout android:orientation="vertical" android:id="@+id/selectPlanLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:id="@+id/allPlanCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="12dp" app:cardElevation="0.5dp" app:contentPadding="2dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:fontFamily="@font/sagnika" android:layout_marginStart="10sp"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/allContactsRecycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

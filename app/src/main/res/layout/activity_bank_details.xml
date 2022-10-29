@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_bank_details_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_8sdp" android:layout_above="@+id/updateBankDetails" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/aadhar_card_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/select_aadhar" android:padding="15dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/select_aadhar" android:inputType="textPersonName" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/edit_aadhar_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:tag="binding_1" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/aadhar_no" android:maxLength="12" android:inputType="number" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/pan_card_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/select_pan" android:padding="15dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/select_pan_card" android:inputType="textPersonName" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/edit_pan_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:tag="binding_2" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/pan_no" android:inputType="text" android:textAllCaps="true" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/selectBank" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:tag="binding_3" android:padding="15dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/select_bank" android:inputType="textPersonName" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/edit_bank_branch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:tag="binding_4" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/branch_name" android:inputType="text" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/account_holder_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:tag="binding_5" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/account_holder" android:inputType="textPersonName" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/edit_acoount_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:tag="binding_6" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/acc" android:inputType="number" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/confirm_account_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:passwordToggleEnabled="true" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:tag="binding_7" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/confirm_account_no" android:inputType="number" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/edit_ifsc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:tag="binding_8" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/ifsc_code" android:inputType="text" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/edi_passbook" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/select_passbook" android:tag="binding_9" android:padding="15dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/passbook_photo" android:inputType="text" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/updateBankDetails" android:tag="binding_10" android:paddingLeft="5dp" android:paddingTop="20dp" android:paddingRight="5dp" android:paddingBottom="20dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-8dp" android:text="@string/update" android:layout_alignParentBottom="true" android:backgroundTint="@color/iconColor" android:paddingHorizontal="5dp" android:paddingVertical="20dp"/>
+</RelativeLayout>

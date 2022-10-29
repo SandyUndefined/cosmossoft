@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parentToolbar" android:tag="layout/custom_toolbar_0" android:background="@color/iconColor" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:contentInsetStart="0dp" android:contentInsetEnd="0dp" android:contentInsetLeft="0dp" android:contentInsetRight="0dp" app:contentInsetEnd="0dp" app:contentInsetLeft="0dp" app:contentInsetRight="0dp" app:contentInsetStart="0dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5sp">
+        <p005de.hdodenhof.circleimageview.CircleImageView android:id="@+id/toolbar_logo_image" android:layout_width="45dp" android:layout_height="45dp" android:layout_margin="@dimen/_5sdp" android:src="@drawable/ic_baseline_account_circle_24"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/userFirstName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hello" android:layout_centerVertical="true" android:fontFamily="@font/sagnika" android:layout_toEndOf="@+id/toolbar_logo_image"/>
+    </RelativeLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/divider" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1.5dp" android:layout_alignParentBottom="true"/>
+</androidx.appcompat.widget.Toolbar>

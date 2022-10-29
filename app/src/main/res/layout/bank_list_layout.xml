@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/bank_list_layout_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="12sp">
+    <ImageView android:id="@+id/contacts_image" android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8sp" android:src="@drawable/ic_aeps_bank"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bankNameNumbers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="15sp" android:layout_marginEnd="12sp" android:layout_toEndOf="@+id/contacts_image">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:id="@+id/bankName" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1sp" android:layout_marginBottom="1sp" android:fontFamily="@font/sagnika" android:layout_marginVertical="1sp"/>
+    </LinearLayout>
+    <View android:id="@+id/contactDivider" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1sp" android:layout_below="@+id/contacts_image" android:layout_marginStart="53sp"/>
+</RelativeLayout>

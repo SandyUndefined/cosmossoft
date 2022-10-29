@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_slider_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.viewpager2.widget.ViewPager2 android:orientation="horizontal" android:id="@+id/sliderViewPager" android:paddingLeft="10sp" android:paddingRight="10sp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="10sp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/LayoutSliderIndicators" android:padding="8sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

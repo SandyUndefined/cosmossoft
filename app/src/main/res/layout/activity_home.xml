@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_home_0" android:background="@color/screenBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/custom_toolbar"/>
+    <FrameLayout android:id="@+id/HomeMenuFragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottomNavigation" android:layout_below="@+id/toolbar"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/bottomNavigation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:itemIconTint="@xml/my_color" app:itemRippleColor="@color/iconColor" app:itemTextAppearanceActive="@style/BottomNavigation.ActiveItemTextAppearance" app:itemTextColor="@xml/my_color" app:labelVisibilityMode="1" app:menu="@menu/navigation_menu"/>
+</RelativeLayout>

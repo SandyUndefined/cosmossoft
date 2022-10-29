@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="15dp">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="15dp" app:cardElevation="5dp" app:contentPadding="8dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/cancel_image" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:src="@drawable/ic_baseline_close_24" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="17sp" android:id="@+id/titleFilterGiven" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_dates" android:layout_centerHorizontal="true"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ToFilterAnalyticDateSection" android:paddingTop="8sp" android:paddingBottom="8sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:layout_below="@+id/titleFilterGiven" android:paddingVertical="8sp">
+                <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/FromFilterAnalyticDate" android:background="@drawable/third_rectangle" android:paddingLeft="11sp" android:paddingTop="8sp" android:paddingRight="11sp" android:paddingBottom="8sp" android:layout_width="140sp" android:layout_height="wrap_content" android:hint="@string/from_date" android:layout_marginEnd="3sp" android:paddingHorizontal="11sp" android:paddingVertical="8sp"/>
+                <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/ToFilterAnalyticDate" android:background="@drawable/third_rectangle" android:paddingLeft="11sp" android:paddingTop="8sp" android:paddingRight="11sp" android:paddingBottom="8sp" android:layout_width="140sp" android:layout_height="wrap_content" android:hint="@string/to_date" android:layout_marginStart="3sp" android:paddingHorizontal="11sp" android:paddingVertical="8sp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8sp" android:layout_below="@+id/ToFilterAnalyticDateSection">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <Button android:id="@+id/FilterAnalyticButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search" android:layout_marginEnd="5sp"/>
+                    <Button android:id="@+id/FilterAnalyticResetButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reset" android:layout_marginStart="5sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_send_money_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <EditText android:textSize="65sp" android:gravity="center" android:id="@+id/amountbalance" android:tag="binding_1" android:background="@android:color/transparent" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="90sp" android:layout_marginTop="35sp" android:layout_marginBottom="35sp" android:maxLines="1" android:maxLength="10" android:layout_centerHorizontal="true" android:inputType="number" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/payLayouts" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/amountbalance">
+            <Button android:id="@+id/onRequestMoneyButton" android:tag="binding_2" android:paddingTop="14sp" android:paddingBottom="14sp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5sp" android:text="@string/request" android:layout_weight="1" android:backgroundTint="@color/iconColor" android:paddingVertical="14sp"/>
+            <Button android:id="@+id/onSendMoneyButton" android:tag="binding_3" android:paddingTop="14sp" android:paddingBottom="14sp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5sp" android:text="@string/pay_now" android:layout_weight="1" android:backgroundTint="@color/iconColor" android:paddingVertical="14sp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/buttonsLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12sp" android:layout_below="@+id/payLayouts">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="35sp" android:textStyle="bold" android:gravity="center" android:id="@+id/one" android:layout_width="55sp" android:layout_height="55sp" android:text="@string/one_" android:layout_weight="1" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+                <TextView android:textSize="35sp" android:textStyle="bold" android:gravity="center" android:id="@+id/two" android:layout_width="55sp" android:layout_height="55sp" android:text="@string/two_" android:layout_weight="1" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+                <TextView android:textSize="35sp" android:textStyle="bold" android:gravity="center" android:id="@+id/three" android:layout_width="55sp" android:layout_height="55sp" android:text="@string/three_" android:layout_weight="1" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="35sp" android:textStyle="bold" android:gravity="center" android:id="@+id/four" android:layout_width="55sp" android:layout_height="55sp" android:text="@string/four_" android:layout_weight="1" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+                <TextView android:textSize="35sp" android:textStyle="bold" android:gravity="center" android:id="@+id/five" android:layout_width="55sp" android:layout_height="55sp" android:text="@string/five_" android:layout_weight="1" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+                <TextView android:textSize="35sp" android:textStyle="bold" android:gravity="center" android:id="@+id/six" android:layout_width="55sp" android:layout_height="55sp" android:text="@string/_6" android:layout_weight="1" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="35sp" android:textStyle="bold" android:gravity="center" android:id="@+id/seven" android:layout_width="55sp" android:layout_height="55sp" android:text="@string/seven_" android:layout_weight="1" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+                <TextView android:textSize="35sp" android:textStyle="bold" android:gravity="center" android:id="@+id/eight" android:layout_width="55sp" android:layout_height="55sp" android:text="@string/eight_" android:layout_weight="1" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+                <TextView android:textSize="35sp" android:textStyle="bold" android:gravity="center" android:id="@+id/nine" android:layout_width="55sp" android:layout_height="55sp" android:text="@string/nine_" android:layout_weight="1" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="35sp" android:textStyle="bold" android:gravity="center" android:id="@+id/point" android:layout_width="55sp" android:layout_height="55sp" android:text="@string/point_" android:layout_weight="1" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+                <TextView android:textSize="35sp" android:textStyle="bold" android:gravity="center" android:id="@+id/zeo" android:layout_width="55sp" android:layout_height="55sp" android:text="@string/zero_" android:layout_weight="1" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+                <ImageButton android:gravity="center" android:id="@+id/erase" android:background="@android:color/transparent" android:layout_width="55sp" android:layout_height="55sp" android:src="@drawable/ic_eraser" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

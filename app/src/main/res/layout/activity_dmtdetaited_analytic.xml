@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_dmtdetaited_analytic_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp">
+        <RelativeLayout android:id="@+id/head_transaction" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/printReceipt" android:layout_width="45dp" android:layout_height="45dp" android:layout_margin="8sp" android:src="@drawable/ic_printer" android:layout_centerVertical="true"/>
+            <p007pl.droidsonroids.gif.GifImageView android:id="@+id/gif_status" android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/warning" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="25sp" android:textColor="@color/black" android:id="@+id/text_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/warning" android:layout_below="@+id/gif_status" android:layout_centerHorizontal="true"/>
+            <p005de.hdodenhof.circleimageview.CircleImageView android:id="@+id/circle_image" android:tag="binding_1" android:layout_width="45sp" android:layout_height="45sp" android:layout_margin="8sp" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_below="@+id/head_transaction">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/bank_name" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/bank_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/account_number__" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/response_mobile" android:tag="binding_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/ifsc_code" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/ifsc_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/dmt_mobile" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/dmt_mobile" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/beneficiary_name" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/bene_user_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/beneficiary_id" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/beneficiary_id" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/transaction_type" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/transactionType" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/gst_no_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/gst_no" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/gst_no" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/tds_charge_section" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/tds_charge" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/response_comm_tds" android:tag="binding_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:id="@+id/amount_label" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/amount" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/response_op_id" android:tag="binding_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/amount_in_words" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:tag="binding_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/charges" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/charges" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/transaction_id" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/response_txn_id" android:tag="binding_6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/response_" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/response_message" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+                <TextView android:textSize="12sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/date_time" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:id="@+id/response_date" android:tag="binding_7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/note_this_is_a_computer_generated_receipt_and_does_not_require_any_physical_signature" android:textAlignment="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

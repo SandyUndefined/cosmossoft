@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_detailed_history_screen_0" android:background="@color/screenBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="12dp" app:cardElevation="0.5dp" app:contentPadding="2dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:text="@string/reference_id" android:fontFamily="@font/sagnika" android:layout_marginStart="10sp"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:fontFamily="@font/sagnika" android:layout_marginStart="10sp"/>
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/iconColor" android:id="@+id/copyReferenceId" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:text="@string/copy" android:fontFamily="@font/sagnika" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="12dp" app:cardElevation="0.5dp" app:contentPadding="2dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:text="@string/paid_to" android:fontFamily="@font/sagnika" android:layout_marginStart="10sp"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/beneficiary_image" android:layout_width="45sp" android:layout_height="45sp" android:layout_margin="8sp" android:src="@drawable/ic_bank" android:contentDescription="@string/todo"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toEndOf="@+id/beneficiary_image">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/beneficiary_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8sp">
+                            <TextView android:textSize="14sp" android:textStyle="bold" android:id="@+id/beneficiary_name" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1sp" android:layout_marginBottom="1sp" android:fontFamily="@font/sagnika" android:layout_marginVertical="1sp"/>
+                            <TextView android:textSize="12sp" android:id="@+id/beneficiary_account_no" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1sp" android:layout_marginBottom="1sp" android:fontFamily="@font/sagnika" android:layout_marginVertical="1sp"/>
+                        </LinearLayout>
+                        <TextView android:textSize="12sp" android:textColor="@color/iconColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rupee_sign" android:layout_centerVertical="true" android:layout_toStartOf="@+id/amount"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/black" android:id="@+id/amount" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="12dp" app:cardElevation="0.5dp" app:contentPadding="2dp">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:text="@string/message" android:fontFamily="@font/sagnika" android:layout_marginStart="10sp"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:fontFamily="@font/sagnika" android:layout_marginStart="10sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

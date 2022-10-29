@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/mainlayout">
+    <LinearLayout android:orientation="vertical" style="@style/mainlayout">
+        <include layout="@layout/fingpay_top_bar"/>
+        <com.fingpay.microatmsdk.custom.ADRadioGroup android:orientation="horizontal" android:id="@+id/rg_date_options" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:checkedButton="@+id/rb_today">
+            <RadioButton android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="16sp" android:textStyle="bold" android:textColor="@color/radio_text" android:gravity="center" android:id="@+id/rb_today" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@null" android:minHeight="42dp" android:text="@string/today" android:singleLine="true" android:layout_weight="1"/>
+            <RadioButton android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="16sp" android:textStyle="bold" android:textColor="@color/radio_text" android:gravity="center" android:id="@+id/rb_yesterday" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@null" android:minHeight="42dp" android:text="@string/yest" android:singleLine="true" android:layout_weight="1"/>
+            <RadioButton android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="16sp" android:textStyle="bold" android:textColor="@color/radio_text" android:gravity="center" android:id="@+id/rb_select_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@null" android:minHeight="42dp" android:text="@string/select_date" android:singleLine="true" android:layout_weight="1"/>
+        </com.fingpay.microatmsdk.custom.ADRadioGroup>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/layout_select_date" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/tv_from" android:background="@drawable/merchant_box" android:padding="5dp" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:hint="@string/from" android:singleLine="true" android:layout_weight="1" android:inputType="textCapWords" android:textCursorDrawable="@null"/>
+                    <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/tv_to" android:background="@drawable/merchant_box" android:padding="5dp" android:layout_width="match_parent" android:layout_height="42dp" android:hint="@string/to" android:singleLine="true" android:layout_weight="1" android:inputType="textCapWords" android:textCursorDrawable="@null"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_go" android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="5dp" android:src="@drawable/go" android:scaleType="centerInside"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/layout_history" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/green_text" android:gravity="center" android:id="@+id/tv_total" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp"/>
+                    <com.fingpay.microatmsdk.custom.NonScrollableListView android:id="@+id/lv_history" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="2dp" android:fastScrollEnabled="true" android:smoothScrollbar="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include layout="@layout/history_details_popup"/>
+</RelativeLayout>

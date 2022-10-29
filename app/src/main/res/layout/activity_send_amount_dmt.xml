@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_send_amount_dmt_0" android:background="@color/screenBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/addAmountTopSection" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="12dp" app:cardElevation="0.5dp" app:contentPadding="2sp">
+        <RelativeLayout android:paddingTop="10sp" android:paddingBottom="10sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="12sp" android:paddingVertical="10sp">
+            <ImageView android:id="@+id/beneficiary_image" android:layout_width="45sp" android:layout_height="45sp" android:layout_margin="8sp" android:src="@drawable/ic_bank" android:contentDescription="@string/todo"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/beneficiary_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="15sp" android:layout_marginEnd="12sp" android:layout_toEndOf="@+id/beneficiary_image">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:id="@+id/beneficiary_name" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1sp" android:layout_marginBottom="1sp" android:fontFamily="@font/sagnika" android:layout_marginVertical="1sp"/>
+                <TextView android:textSize="12sp" android:id="@+id/beneficiary_account_no" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1sp" android:layout_marginBottom="1sp" android:fontFamily="@font/sagnika" android:layout_marginVertical="1sp"/>
+                <TextView android:textSize="12sp" android:id="@+id/beneficiary_bank_name" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1sp" android:layout_marginBottom="1sp" android:fontFamily="@font/sagnika" android:layout_marginVertical="1sp"/>
+            </LinearLayout>
+            <TextView android:textSize="10sp" android:textColor="@color/iconColor" android:id="@+id/view_history" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_history" android:layout_centerVertical="true" android:fontFamily="@font/sagnika" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@+id/addAmountBalanceSection" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_below="@+id/addAmountTopSection" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="12dp" app:cardElevation="0.5dp" app:contentPadding="5dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="5dp">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/enteredAmount" android:tag="binding_5" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_amount" android:maxLines="1" android:ems="10" android:maxLength="5" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:inputType="number" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:theme="@style/Widget.Design.TextInputLayout" android:id="@+id/textInputLayout" android:background="@android:color/transparent" android:focusableInTouchMode="false" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="5dp">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/transactionType" android:tag="binding_6" android:background="@android:color/transparent" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/transaction_type" android:inputType="none" android:importantForAutofill="2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton android:textColor="@color/white" android:id="@+id/button_send_amount" android:tag="binding_7" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:text="@string/confirm" android:layout_weight="1" style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

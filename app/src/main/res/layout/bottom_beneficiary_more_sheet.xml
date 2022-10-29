@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/bottom_beneficiary_more_sheet_0" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/optionsCard" android:padding="-10sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="15dp" app:cardElevation="0.5dp" app:contentPadding="2sp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/history_layout" android:layout_width="match_parent" android:layout_height="45dp">
+                <TextView android:textSize="24sp" android:textColor="@color/iconColor" android:id="@+id/view_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_history" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:fontFamily="@font/sagnika"/>
+                <View android:id="@+id/beneficiaryDivider" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/share_layout" android:layout_width="match_parent" android:layout_height="45dp">
+                <TextView android:textSize="24sp" android:textColor="@color/iconColor" android:id="@+id/penny_drop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/penny_drop" android:layout_centerInParent="true" android:fontFamily="@font/sagnika" android:textAlignment="center"/>
+                <View android:id="@+id/beneficiaryDivider3" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/remove_layout" android:layout_width="match_parent" android:layout_height="45dp">
+                <TextView android:textSize="24sp" android:textColor="@android:color/holo_red_dark" android:id="@+id/remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remove" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:fontFamily="@font/sagnika"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@+id/cancel_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_below="@+id/optionsCard" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="15dp" app:cardElevation="0.5dp" app:contentPadding="2sp">
+        <RelativeLayout android:id="@+id/cancel_layout" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/iconColor" android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:fontFamily="@font/sagnika"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

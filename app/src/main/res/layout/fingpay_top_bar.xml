@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_top_bar" android:background="@color/header_color" android:layout_width="match_parent" android:layout_height="54dp" android:layout_alignParentTop="true">
+    <TextView android:gravity="center_vertical" android:id="@+id/tv_screen_name" android:layout_marginLeft="15dp" android:text="Fingpay" android:layout_centerVertical="true" style="@style/heading_text"/>
+</RelativeLayout>

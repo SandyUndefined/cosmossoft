@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_profile_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/profile_top_toolbar"/>
+    <RelativeLayout android:id="@+id/picture_sections" android:layout_width="120dp" android:layout_height="120dp" android:layout_below="@+id/toolbar">
+        <p005de.hdodenhof.circleimageview.CircleImageView android:id="@+id/profileImage" android:layout_width="120dp" android:layout_height="120dp" android:layout_margin="10dp" app:civ_border_width="0.7dp"/>
+        <p004at.markushi.p012ui.CircleButton android:id="@+id/onChangePicture" android:layout_width="40dp" android:layout_height="50dp" android:src="@drawable/ic_baseline_camera_alt_24" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:cb_color="@color/iconColor"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/picture_sections">
+        <info.androidhive.fontawesome.FontTextView android:textSize="18sp" android:textColor="@color/black" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:hint="@string/mobile_number" android:layout_marginVertical="10dp"/>
+        <info.androidhive.fontawesome.FontTextView android:textSize="14sp" android:textColor="@color/black" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:hint="@string/name" android:layout_marginVertical="10dp"/>
+        <info.androidhive.fontawesome.FontTextView android:textSize="10sp" android:textColor="@color/iconColor" android:tag="binding_3" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/edit_details" android:paddingEnd="8dp" android:layout_marginVertical="10dp"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/listRecycler" android:padding="16dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/picture_sections" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</RelativeLayout>

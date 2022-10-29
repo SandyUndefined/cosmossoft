@@ -1,0 +1,92 @@
+package com.sandy.cosmossoft.fragments;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.ContextWrapper;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+import dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories;
+import dagger.hilt.android.internal.managers.FragmentComponentManager;
+import dagger.hilt.internal.GeneratedComponentManagerHolder;
+import dagger.hilt.internal.Preconditions;
+import dagger.hilt.internal.UnsafeCasts;
+
+abstract class Hilt_SignInFragment extends Fragment implements GeneratedComponentManagerHolder {
+    private ContextWrapper componentContext;
+    private volatile FragmentComponentManager componentManager;
+    private final Object componentManagerLock = new Object();
+    private boolean injected = false;
+
+    Hilt_SignInFragment() {
+    }
+
+    Hilt_SignInFragment(int contentLayoutId) {
+        super(contentLayoutId);
+    }
+
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        initializeComponentContext();
+        inject();
+    }
+
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        ContextWrapper contextWrapper = this.componentContext;
+        Preconditions.checkState(contextWrapper == null || FragmentComponentManager.findActivity(contextWrapper) == activity, "onAttach called multiple times with different Context! Hilt Fragments should not be retained.", new Object[0]);
+        initializeComponentContext();
+        inject();
+    }
+
+    private void initializeComponentContext() {
+        if (this.componentContext == null) {
+            this.componentContext = FragmentComponentManager.createContextWrapper(super.getContext(), (Fragment) this);
+        }
+    }
+
+    public Context getContext() {
+        if (super.getContext() == null && this.componentContext == null) {
+            return null;
+        }
+        initializeComponentContext();
+        return this.componentContext;
+    }
+
+    public LayoutInflater onGetLayoutInflater(Bundle savedInstanceState) {
+        return LayoutInflater.from(FragmentComponentManager.createContextWrapper(super.onGetLayoutInflater(savedInstanceState), (Fragment) this));
+    }
+
+    public final Object generatedComponent() {
+        return componentManager().generatedComponent();
+    }
+
+    /* access modifiers changed from: protected */
+    public FragmentComponentManager createComponentManager() {
+        return new FragmentComponentManager(this);
+    }
+
+    public final FragmentComponentManager componentManager() {
+        if (this.componentManager == null) {
+            synchronized (this.componentManagerLock) {
+                if (this.componentManager == null) {
+                    this.componentManager = createComponentManager();
+                }
+            }
+        }
+        return this.componentManager;
+    }
+
+    /* access modifiers changed from: protected */
+    public void inject() {
+        if (!this.injected) {
+            this.injected = true;
+            ((SignInFragment_GeneratedInjector) generatedComponent()).injectSignInFragment((SignInFragment) UnsafeCasts.unsafeCast(this));
+        }
+    }
+
+    public ViewModelProvider.Factory getDefaultViewModelProviderFactory() {
+        return DefaultViewModelFactories.getFragmentFactory(this, super.getDefaultViewModelProviderFactory());
+    }
+}

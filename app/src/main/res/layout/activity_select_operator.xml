@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_select_operator_0" android:background="@color/screenBackground" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/selectOperatorSliders" android:layout_width="match_parent" android:layout_height="160sp" android:layout_marginTop="4sp" android:layout_marginBottom="4sp" android:layout_marginVertical="4sp"/>
+        <androidx.cardview.widget.CardView android:id="@+id/OperatorListCard" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_below="@+id/selectOperatorSliders" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="12dp" app:cardElevation="0.5dp" app:contentPadding="2dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:text="@string/operators" android:fontFamily="@font/sagnika" android:layout_marginStart="10sp"/>
+                <androidx.appcompat.widget.SearchView android:id="@+id/operatorSearchList" android:layout_width="match_parent" android:layout_height="wrap_content" app:iconifiedByDefault="false" app:queryHint="Search by name"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/operatorsRecycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

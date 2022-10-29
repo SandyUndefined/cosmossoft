@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/circle_sheet_background_0" android:background="@drawable/bottom_sheet_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/topCircleSection" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/topHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20sp" android:text="@string/select_your_circle" android:layout_centerVertical="true" android:fontFamily="@font/sagnika"/>
+        <ImageView android:id="@+id/exitButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20sp" android:src="@drawable/ic_baseline_close_24" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <SearchView android:id="@+id/circleListRecyclerSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:layout_below="@+id/topCircleSection" android:iconifiedByDefault="false" android:queryHint="Search" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/circleListRecycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" android:layout_below="@+id/circleListRecyclerSearch" android:layout_marginStart="20dp" android:layout_marginEnd="20sp"/>
+</RelativeLayout>

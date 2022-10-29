@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_bbps_recharge_0" android:background="@color/screenBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/onBillPayButton" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/sliders_fragment" android:layout_width="match_parent" android:layout_height="160sp" android:layout_marginTop="4sp" android:layout_marginBottom="4sp" android:layout_marginVertical="4sp"/>
+            <androidx.cardview.widget.CardView android:id="@+id/fetchAllInfoWeb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="4dp" android:layout_below="@+id/sliders_fragment" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="10dp" app:cardElevation="0.5dp" app:contentPadding="5dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10sp" android:layout_marginRight="10sp" android:layout_marginHorizontal="10sp">
+                    <RelativeLayout android:id="@+id/all_information_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5sp">
+                        <ImageView android:id="@+id/operator_logo" android:tag="binding_1" android:layout_width="45sp" android:layout_height="45sp" android:src="@color/iconColor" android:contentDescription="@string/todo"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15sp" android:layout_toEndOf="@+id/operator_logo">
+                            <TextView android:id="@+id/d2h_name" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/d2h" android:maxLines="1" android:maxLength="30"/>
+                            <TextView android:id="@+id/d2h_num" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/d2h_num"/>
+                        </LinearLayout>
+                        <View android:id="@+id/divider_again" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8sp" android:layout_marginBottom="8sp" android:layout_below="@+id/operator_logo" android:layout_marginVertical="8sp"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/all_bill_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5sp" android:layout_below="@+id/all_information_layout">
+                        <TextView android:textColor="@color/black" android:id="@+id/bill_details_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bill_details" android:fontFamily="@font/sagnika"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/customer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:layout_marginBottom="5sp" android:layout_below="@+id/bill_details_text" android:layout_marginVertical="5sp">
+                            <TextView android:textSize="10sp" android:id="@+id/monthly_amount_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/monthly_amount" android:fontFamily="@font/sagnika"/>
+                            <TextView android:textSize="10sp" android:id="@+id/customer_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/customer_name" android:fontFamily="@font/sagnika"/>
+                            <TextView android:textSize="10sp" android:id="@+id/bill_message" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sagnika"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/customer_text_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:layout_marginBottom="5sp" android:layout_below="@+id/bill_details_text" android:layout_marginStart="35sp" android:layout_toEndOf="@+id/customer_text" android:layout_marginVertical="5sp">
+                            <TextView android:textSize="10sp" android:id="@+id/monthly_amount" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sagnika"/>
+                            <TextView android:textSize="10sp" android:id="@+id/customer_name" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sagnika"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:background="@drawable/third_rectangle" android:padding="3sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:layout_marginBottom="5sp" android:layout_below="@+id/all_bill_info" android:layout_marginVertical="5sp">
+                        <EditText android:id="@+id/enterPlan" android:tag="binding_7" android:background="@android:color/transparent" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="48sp" android:hint="@string/amount" android:maxLines="1" android:maxLength="5" android:drawablePadding="5sp" android:inputType="number" android:drawableStart="@drawable/ic_rupee"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+    <Button android:id="@+id/onBillPayButton" android:paddingLeft="5sp" android:paddingTop="20sp" android:paddingRight="5sp" android:paddingBottom="20sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-7sp" android:text="@string/confirm" android:layout_alignParentBottom="true" android:backgroundTint="@color/iconColor" android:paddingHorizontal="5sp" android:paddingVertical="20sp"/>
+</RelativeLayout>

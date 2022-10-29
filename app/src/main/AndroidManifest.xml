@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.2_beta" android:compileSdkVersion="32" android:compileSdkVersionCodename="12" package="com.sandy.cosmossoft" platformBuildVersionCode="32" platformBuildVersionName="12">
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="32"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-feature android:name="android.hardware.bluetooth"/>
+    <uses-feature android:name="android.hardware.bluetooth_le"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRECISE_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="31"/>
+    <uses-permission android:name="android.permission.USB_PERMISSION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <queries>
+        <package android:name="com.mantra.rdservice"/>
+        <package android:name="com.scl.rdservice"/>
+        <package android:name="com.precision.pb510.rdservice"/>
+        <package android:name="com.secugen.rdservice"/>
+        <package android:name="com.nextbiometrics.onetouchrdservice"/>
+        <package android:name="com.acpl.registersdk"/>
+        <package android:name="co.aratek.asix_gms.rdservice"/>
+        <package android:name="com.mantra.mis100v2.rdservice"/>
+        <package android:name="com.paytm.pgsdk.TransactionManager.PAYTM_APP_PACKAGE"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE"/>
+        </intent>
+    </queries>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <application android:theme="@style/Theme.ProjectRC" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.sandy.cosmossoft.BaseApplication" android:debuggable="true" android:allowBackup="true" android:largeHeap="true" android:supportsRtl="true" android:extractNativeLibs="false" android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+        <activity android:name="com.sandy.cosmossoft.activities.paytm.PayTmPayouts" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.cashdeposit.CashDeposit" android:exported="false" android:screenOrientation="portrait"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="$(com.sandy.cosmossoft).here.this.library.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name="com.sandy.cosmossoft.activities.Payouts.AddPDMTBeneficiary" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.Payouts.PayoutHome" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.addfunds.RequestOffline" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.addfunds.FundExchange" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.pins.TPinRegister" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.rechargeactivities.CustomerInfoActivity" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.rechargeactivities.ROffer" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.addfunds.FundDetailedAnalytic" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.aeps.MiniStatementAnalytic" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.aeps.AepsDetailedAnalytic" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.tobank.DMTDetailedAnalytic" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.microatm.MicroAtmDetailedAnalytic" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.bbps.BBPSDetailedAnalytic" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.rechargeactivities.RechargeDetailedAnalytic" android:exported="true"/>
+        <activity android:name="com.sandy.cosmossoft.activities.tobank.DMTHome" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.creation.CreationActivity" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.microatm.MicroAtmResponse" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.addfunds.PayActivityWithPayTm" android:exported="true" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <activity android:name="com.sandy.cosmossoft.activities.addfunds.PayActivity" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.addfunds.AddFundList" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.profile.Settings" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.profile.BankDetails" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.profile.SocialMedia" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.profile.ProfileDetails" android:exported="true" android:screenOrientation="portrait"/>
+        <service android:name="com.anfu.pos.library.bluetooth4.BluetoothLeService" android:enabled="true"/>
+        <receiver android:name="com.razorpay.RzpTokenReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="rzp.device_token.share"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/CheckoutTheme" android:name="com.razorpay.CheckoutActivity" android:exported="true" android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <data android:scheme="io.rzp" android:host="rzp.io"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppThemeAdditional" android:label="@string/app_name" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.facilityresponses.AePSSuccessMiniStatementResponse" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.aeps.MiniStatement" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.facilityresponses.AepsFailureReponseScreen" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.facilityresponses.AePSSuccessResponseScreen" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.tobank.DetailedHistoryScreen" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.tobank.SelectedBeneficiaryHistory" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.tobank.SendAmountDMT" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.tobank.RegisterRemitter" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.tobank.QueryRemitter" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.profile.ProfileActivity" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.Payouts.SendAmountPayouts" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.mobilenumber.SendMoney" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.mobilenumber.MobileNumberPay" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.aeps.CashWithdrawal" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.aeps.BalanceEnquiry" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.aeps.AepsHome" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.bbps.BbpsRecharge" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.bbps.BbpsEnter" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.tobank.AddBeneficiary" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.tobank.SelectBank" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.payoutpaysprint.PayoutDetailedAnalytic" android:exported="false"/>
+        <activity android:name="com.sandy.cosmossoft.activities.sectionhistory.RegularHistory" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.payoutpaysprint.SendPayout" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.payoutpaysprint.VerifyAccounts" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.payoutpaysprint.PaysprintHome" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.payoutpaysprint.PayoutAddAccount" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.payoutpaysprint.PaysprintPayout" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.tobank.ToAccount" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.microatm.MicroAtmHome" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.rechargeactivities.SelectOperator" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.rechargeactivities.RechargeMyPlan" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.rechargeactivities.MobileRecharge" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.sandy.cosmossoft.activities.SplashScreen" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sandy.cosmossoft.activities.HomeActivity" android:screenOrientation="portrait" android:configChanges="uiMode"/>
+        <activity android:name="com.sandy.cosmossoft.activities.MainActivity" android:screenOrientation="portrait" android:configChanges="uiMode"/>
+        <activity android:name="com.paysprint.onboardinglib.activities.AadhaarVerification"/>
+        <activity android:name="com.paysprint.onboardinglib.activities.PanImageUpload" android:screenOrientation="userPortrait"/>
+        <activity android:name="com.paysprint.onboardinglib.activities.AddressUpdateActivity"/>
+        <activity android:name="com.paysprint.onboardinglib.activities.AadhaarEKYCActivity"/>
+        <activity android:name="com.paysprint.onboardinglib.activities.AadhaarVerificationActivity"/>
+        <activity android:name="com.paysprint.onboardinglib.activities.PanImageActivity"/>
+        <activity android:name="com.paysprint.onboardinglib.activities.PanActivity"/>
+        <activity android:name="com.paysprint.onboardinglib.activities.HostActivity"/>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>
+        <activity android:name="com.paysprint.microatmlib.activities.HostActivity"/>
+        <activity android:theme="@style/Theme.Black.NoTitleBar" android:name="com.fingpay.microatmsdk.MicroAtmLoginScreen" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation" android:noHistory="true"/>
+        <activity android:theme="@style/Theme.Black.NoTitleBar" android:name="com.fingpay.microatmsdk.MATMKeyInjectionScreen" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation" android:noHistory="true"/>
+        <activity android:theme="@style/Theme.Black.NoTitleBar" android:name="com.fingpay.microatmsdk.HistoryScreen" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation" android:noHistory="true"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.paytm.pgsdk.PaytmPGActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/TransparentActivityTheme" android:name="com.paytm.pgsdk.AioMatchUserActivity"/>
+        <service android:name="com.paytm.pgsdk.IntentServicePostNotification" android:exported="false"/>
+        <service android:name="com.paytm.pgsdk.IntentServicePreNotification" android:exported="false"/>
+        <service android:name="easypay.appinvoke.utils.EasyPayConfigDownloader" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="easypay.appinvoke.utils.AnalyticsService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <activity android:name="easypay.appinvoke.AnalyticsManagerInfoDisplayActivity"/>
+        <activity android:theme="@style/Dexter.Internal.Theme.Transparent" android:name="com.karumi.dexter.DexterActivity"/>
+        <activity android:theme="@style/Theme.Transparent.ImagePicker" android:name="com.github.dhaval2404.imagepicker.ImagePickerActivity" android:screenOrientation="unspecified"/>
+        <provider android:name="com.github.dhaval2404.imagepicker.ImagePickerFileProvider" android:exported="false" android:authorities="com.sandy.cosmossoft.imagepicker.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/image_picker_provider_paths"/>
+        </provider>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.sandy.cosmossoft.androidx-startup">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+    </application>
+</manifest>

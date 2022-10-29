@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_regular_history_0" android:background="@color/screenBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/HistorySearchCard" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="25dp" app:cardElevation="0.5dp" app:contentPadding="2sp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <SearchView android:textSize="14sp" android:textStyle="bold" android:id="@+id/searchView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:iconifiedByDefault="false" android:queryHint="Search by Reference, status" android:fontFamily="@font/sagnika"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/history_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/HistorySearchCard"/>
+    <TextView android:textSize="@dimen/_18sdp" android:id="@+id/no_records" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_records" android:layout_centerInParent="true"/>
+</RelativeLayout>

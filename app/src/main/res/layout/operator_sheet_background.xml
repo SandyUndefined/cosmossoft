@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/operator_sheet_background_0" android:background="@drawable/bottom_sheet_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/topOperatorSection" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20sp" android:text="@string/select_your_operator" android:layout_centerVertical="true" android:fontFamily="@font/sagnika"/>
+        <ImageView android:id="@+id/exitButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20sp" android:src="@drawable/ic_multiply" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/operatorListRecycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20sp" android:layout_below="@+id/topOperatorSection"/>
+</RelativeLayout>

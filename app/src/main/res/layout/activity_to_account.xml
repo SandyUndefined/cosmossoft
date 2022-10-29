@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_to_account_0" android:background="@color/screenBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/banksSearchCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="25dp" app:cardElevation="0.5dp" app:contentPadding="2sp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <SearchView android:textSize="14sp" android:textStyle="bold" android:id="@+id/bankSearchView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:iconifiedByDefault="false" android:queryHint="Search bank account" android:fontFamily="@font/sagnika"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@+id/bankSectionBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_below="@+id/banksSearchCard" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="12dp" app:cardElevation="0.5dp" app:contentPadding="2sp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabLayout android:id="@+id/bankOptionTabs" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/_35dp"/>
+            <View android:id="@+id/tabLayoutDivider" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/bankOptionTabs"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/myBankListRecycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="48dp" android:layout_below="@+id/tabLayoutDivider"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/myHistoryListRecycler" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="48dp" android:layout_below="@+id/tabLayoutDivider"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@+id/AddBeneficiary" android:tag="binding_1" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="25sp" android:layout_marginBottom="8dp" android:foreground="?android:attr/selectableItemBackground" android:layout_alignParentBottom="true" android:layout_marginStart="15sp" android:layout_marginEnd="15sp" app:cardBackgroundColor="@color/mainBlue" app:cardCornerRadius="21dp" app:cardElevation="2dp" app:contentPaddingBottom="10sp" app:contentPaddingLeft="25sp" app:contentPaddingRight="25sp" app:contentPaddingTop="10sp">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="#fff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_recipient_bank_account" android:textAlignment="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
